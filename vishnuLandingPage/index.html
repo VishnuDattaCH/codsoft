@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nothing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="sec">
+        <header>
+            <a href="#"><img class="logo" src="img/hp-removebg-preview.png"></a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">What's New</a></li>
+            <li><a href="#">Newsletter</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>That's What <br><span>I like</span></h2>
+                <p>A new era. Nike shoes are known for their high-quality materials
+                     innovative designs, and excellent performance</p>
+                    <a href="#">View More</a>
+            </div>
+        </div>
+        <div class="imgBox">
+            <img src="img/whitee.png" class="nothing">
+        </div>
+        <ul class="thumb">
+            <li><img src="img/du3047tx2.png"  onclick="imgSlider('img/du3047tx2.png'); changebg('#647919')"></li>
+            <li><img src="img/whitee.png" onclick="imgSlider('img/whitee.png'); changebg('#1c2039')"></li>
+        </ul>
+        <ul class="social">
+            <li><a href="#"><img src="img/facebook.png"></a></li>
+            <li><a href="#"><img src="img/twitter.png"></a></li>
+            <li><a href="#"><img src="img/instagram.png"></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.nothing').src=anything;
+        }
+        function changebg(color)
+        {
+            const sec=document.querySelector('.sec');
+            sec.style.background = color;
+        }
+    </script>
+</body>
+</html>
